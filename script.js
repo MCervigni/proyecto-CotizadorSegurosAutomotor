@@ -105,5 +105,9 @@ function cotizarSeguro() {
            - Costo de cuota mensual (12 cuotas): $${valorCuota.toFixed(2)}`);
 }
 
-// === Ejecución de función principal ===
-cotizarSeguro();
+let loop = true;
+while (loop) {
+//---Ejecución de función principal---
+    cotizarSeguro(); 
+    loop = confirm("Desea realizar otra cotización?");
+}
